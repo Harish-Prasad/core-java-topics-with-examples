@@ -46,8 +46,26 @@ public class Main {
 
 //    Some Arithmetics and casting on the above data_types
 
+        int total = (myMinIntValue / 2);
+        System.out.println("total is "+total);
+// casting is the process of converting one data_type to another.
+        byte byteResult = (byte)(myMinByteValue / 2);
+
+        short shortResult = (short) (myMinShortValue / 2 );
+
+//        default value after validating the expression which is at the right hand side is interger value
+//         so explicit casting is required unless it is int in the above case.
+
+    byte byteNumber = 125;
+    short shortNumber = 500;
+    int intNumber = 1000;
+    long longNumber = 50000L + 10L*(byteNumber + shortNumber + intNumber);
+        System.out.println("Long type value is "+longNumber);
 
 
+        short shortResults = (short)(50 + 10*(byteNumber + shortNumber + intNumber));
+//  here casting is required because the expression after evaluation produces integer type(default) so it needs to be casted explicitly to short.
+        System.out.println("Short type value is "+shortResults);
 
     }
 }
